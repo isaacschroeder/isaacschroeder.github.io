@@ -6,13 +6,9 @@ nav ul
     background-color: #B34409;
     border: none;
 
-    /*for sticking at the top screen and taking up the full width*/
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 nav ul li
@@ -20,7 +16,6 @@ nav ul li
     padding: 0px;
     margin: 0px;
     border: none;
-    display: inline-block;
     border: none;
     font-size: 24px;
     color: white;
@@ -28,10 +23,25 @@ nav ul li
 
 nav ul li a
 {
-    display: inline-block;
     margin: 0px;
-    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: none;
+
+    display: inline-block;
+}
+
+nav ul li ul
+{
+    position: absolute;
+    display: none;
+}
+
+nav ul li:hover ul
+{
+    display: block;
 }
 
 /*So the anchor text will actually show up as white*/
@@ -54,10 +64,4 @@ nav ul li a:hover
     color: white;
     text-decoration: underline;
     background-color: #622707;
-}
-
-/*To space from the top of the page, as the navbar is now fixed and cannot be positioned off of*/
-header
-{
-    margin-top: 80px;
 }

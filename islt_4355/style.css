@@ -1,3 +1,9 @@
+/*get rid of the default margins and padding for body*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
 h1 {
     color:#007351
 }
