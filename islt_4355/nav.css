@@ -1,0 +1,63 @@
+nav ul 
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #B34409;
+    border: none;
+
+    /*for sticking at the top screen and taking up the full width*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+}
+
+nav ul li
+{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    display: inline-block;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+nav ul li a
+{
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    border: none;
+}
+
+/*So the anchor text will actually show up as white*/
+nav ul li a:link
+{
+    color: white;
+    text-decoration: none;
+}
+
+/*To avoid the links having default browser styling when already visisted*/
+nav ul li a:visited
+{
+    color: white;
+    text-decoration: none;
+}
+
+/*Underline the link when hovered over and change background color*/
+nav ul li a:hover
+{
+    color: white;
+    text-decoration: underline;
+    background-color: #622707;
+}
+
+/*To space from the top of the page, as the navbar is now fixed and cannot be positioned off of*/
+header
+{
+    margin-top: 80px;
+}
