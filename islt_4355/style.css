@@ -1,9 +1,19 @@
-/*get rid of the default margins and padding for body*/
+/*get rid of the silly default margins and padding for whole body*/
 body {
     margin: 0px;
     padding: 0px;
+    background-color: #fddfd4;
+}
+
+/*re-add margin to everything except nav section*/
+body header, main, footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 60%;
 }
 
 h1 {
-    color:#007351
+    color:#067654
 }
