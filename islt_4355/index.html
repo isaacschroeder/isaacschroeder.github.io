@@ -6,10 +6,11 @@
         Use: The place a user first arrives at upon approaching the website
         Author: Isaac Schroeder
         School/Term: University of Missouri, Spring 2023
-        Developed: 3/3/23
-        Tested: 3/3/23
+        Developed: 3/6/23
+        Tested: 3/6/23
     -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--To be mobile friendly!-->
     <title>Isaac's Home Page</title>
 
     <!--Google fonts:-->
@@ -19,21 +20,24 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="experience.html">Experience</a>
-                <ul>
+        <label id="hamburger" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <ul class="menu">
+            <li class="menuItem"><a href="index.html">Home</a></li>
+            <li class="menuItem"><a href="about.html">About</a></li>
+            <li class="menuItem"><a href="experience.html">Experience</a>
+                <ul id="mobileHide">
                     <li><a href="#">Link 1</a></li>
                     <li><a href="#">Link 2</a></li>
                     <li><a href="#">Link 3</a></li>
                 </ul>
             </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#contact.html">Contact</a></li>
+            <li class="menuItem"><a href="reflection.html">Reflection</a></li>
+            <li class="menuItem"><a href="#contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -43,20 +47,30 @@
 
     <main>
         <h3>Learn about Isaac's education, projects, previous jobs, and more!</h3>
-        
-        <p>
-            If you are looking for a qualified software developer, your search may end here. 
-            My name is Isaac Schroeder, and I possess a variety of programming capabilities 
-            which might be of interest to you or your company. This website outlines my educational 
-            accomplishments, software projects, and previous positions of employment. I have 
-            experience over several development areas, ranging from embedded system hardware 
-            projects to application creation on multiple platforms. My innate interest in problem 
-            solving through coding helps me to continuously expand my knowledge through taking on 
-            new technologies and projects. I look forward to employment with a company who is 
-            interested in making the world a better place. I am not particular about what kind 
-            of programming I will be doing as long as I can contribute in a meaningful way. Be 
-            sure to reach out through my contact page if you are in need of my skill set.
-        </p>
+
+        <div class="columnWrapper">
+            <div class="column1">
+                <div class="textWrapper1">
+                    <p>
+                        If you are looking for a qualified software developer, your search may end here! 
+                        My name is Isaac Schroeder, and I possess a variety of programming capabilities 
+                        which might be of interest to you or your company. This website outlines my educational 
+                        accomplishments, software projects, and previous positions of employment. I have 
+                        experience over several development areas, ranging from embedded system hardware 
+                        projects to application creation on multiple platforms. My innate interest in problem 
+                        solving through coding helps me to continuously expand my knowledge through taking on 
+                        new technologies and projects. I look forward to employment with a company who is 
+                        interested in making the world a better place. I am not particular about what kind 
+                        of programming I will be doing as long as I can contribute in a meaningful way. Be 
+                        sure to reach out through my contact page if you are in need of my skill set.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column2">
+                <img src="Items/bldgss.jpg" alt="Picture of Isaac Schroeder">
+            </div>
+        </div>
     </main>
 
     <footer>

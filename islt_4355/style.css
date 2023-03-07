@@ -7,7 +7,7 @@ body {
     padding: 0px;
     background-color: #a3e6d2;
     font-size: 140%;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', monospace;
 }
 
 /*re-add margin to everything except nav section*/
@@ -23,11 +23,9 @@ h1 {
     color:#B34409;
 }
 
-main {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    line-height: 1.5;
+img {
+    width: 100%;
+    height: auto;
 }
 
 .textWrapper1 {
@@ -46,57 +44,7 @@ main {
 }
 
 div[class^='column'], div[class*=' column']{
-    border: 0px solid black;
     margin-top: 25px;
-}
-
-.column1 {
-    background-color: #0b4735;
-    color: white;
-}
-
-/*For phone displays, 1 column setup*/
-@media only screen and (max-width:1000px) {
-    .column1 {
-        width: 90%;
-    }
-    .column2 {
-        width: 90%;
-    }
-    .column3 {
-        width: 90%;
-    }
-}
-
-/*For tablet displays, 2 column setup*/
-@media only screen and (min-width:1001px) and (max-width:1499px) {
-    .column1 {
-        width: 45%;
-    }
-    .column2 {
-        width: 45%;
-    }
-    .column3 {
-        width: 90%;
-    }
-}
-
-/*For desktop displays, 3 column setup*/
-@media only screen and (min-width:1500px) {
-    .column1 {
-        width: 25%;
-    }
-    .column2 {
-        width: 40%;
-    }
-    .column3 {
-        width: 25%;
-    }
-}
-
-#imageOfMe {
-    width: 100%;
-    height: auto;
 }
 
 .linkButton {
@@ -126,4 +74,9 @@ div[class^='column'], div[class*=' column']{
     color: black;
     text-decoration: none;
     background-color: #d17756;
+}
+
+/*mobile navigation!*/
+@media only screen and (max-width:1000px) {
+
 }

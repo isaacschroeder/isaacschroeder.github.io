@@ -23,18 +23,20 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="experience.html">Experience</a>
-                <ul>
+        <label id="hamburger" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <ul class="menu">
+            <li class="menuItem"><a href="index.html">Home</a></li>
+            <li class="menuItem"><a href="about.html">About</a></li>
+            <li class="menuItem"><a href="experience.html">Experience</a>
+                <ul id="mobileHide">
                     <li><a href="#">Link 1</a></li>
                     <li><a href="#">Link 2</a></li>
                     <li><a href="#">Link 3</a></li>
                 </ul>
             </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#contact.html">Contact</a></li>
+            <li class="menuItem"><a href="reflection.html">Reflection</a></li>
+            <li class="menuItem"><a href="#contact.html">Contact</a></li>
         </ul>
     </nav>
 

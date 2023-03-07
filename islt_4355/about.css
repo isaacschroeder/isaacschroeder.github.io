@@ -1,0 +1,50 @@
+.columnWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+
+.column1 {
+    background-color: #0b4735;
+    color: white;
+}
+
+/*For phone displays, 1 column setup*/
+@media only screen and (max-width:1000px) {
+    .column1 {
+        width: 90%;
+    }
+    .column2 {
+        width: 90%;
+    }
+    .column3 {
+        width: 90%;
+    }
+}
+
+/*For tablet displays, 2 column setup*/
+@media only screen and (min-width:1001px) and (max-width:1499px) {
+    .column1 {
+        width: 45%;
+    }
+    .column2 {
+        width: 45%;
+    }
+    .column3 {
+        width: 90%;
+    }
+}
+
+/*For desktop displays, 3 column setup*/
+@media only screen and (min-width:1500px) {
+    .column1 {
+        width: 25%;
+    }
+    .column2 {
+        width: 40%;
+    }
+    .column3 {
+        width: 25%;
+    }
+}

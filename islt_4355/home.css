@@ -1,0 +1,33 @@
+.columnWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+
+/*For phone and tablet displays, 1 column setup*/
+@media only screen and (max-width:1700px) {
+    .column1 {
+        width: 85%;
+    }
+    .column2 {
+        width: 85%;
+    }
+}
+
+/*For desktop displays, 2 column setup*/
+@media only screen and (min-width:1701px) {
+    .column1 {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        padding-right: 3%;
+    }
+    .column2 {
+        width: 30%;
+    }
+}
+
+main h3 {
+    text-align: center;
+}
