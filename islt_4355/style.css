@@ -1,19 +1,129 @@
-/*get rid of the silly default margins and padding for whole body*/
+/*get rid of the silly default margins and padding for whole body.
+also, set default font size to 100% so that it can be scaled based on screensize
+
+background-color: #fddfd4;*/
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #fddfd4;
+    background-color: #a3e6d2;
+    font-size: 140%;
+    font-family: 'Comfortaa', cursive;
 }
 
 /*re-add margin to everything except nav section*/
-body header, main, footer {
+body header, footer {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-bottom: 25px;
-    width: 60%;
+    text-align: center;
 }
 
 h1 {
-    color:#067654
+    color:#B34409;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+
+.textWrapper1 {
+    border: 5px solid #0b4735;
+    background-color: #87d4bd;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.textWrapper2 {
+    border: 5px solid #0b4735;
+    background-color: #0b4735;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+div[class^='column'], div[class*=' column']{
+    border: 0px solid black;
+    margin-top: 25px;
+}
+
+.column1 {
+    background-color: #0b4735;
+    color: white;
+}
+
+/*For phone displays, 1 column setup*/
+@media only screen and (max-width:1000px) {
+    .column1 {
+        width: 90%;
+    }
+    .column2 {
+        width: 90%;
+    }
+    .column3 {
+        width: 90%;
+    }
+}
+
+/*For tablet displays, 2 column setup*/
+@media only screen and (min-width:1001px) and (max-width:1499px) {
+    .column1 {
+        width: 45%;
+    }
+    .column2 {
+        width: 45%;
+    }
+    .column3 {
+        width: 45%;
+    }
+}
+
+/*For desktop displays, 3 column setup*/
+@media only screen and (min-width:1500px) {
+    .column1 {
+        width: 25%;
+    }
+    .column2 {
+        width: 40%;
+    }
+    .column3 {
+        width: 25%;
+    }
+}
+
+#imageOfMe {
+    width: 100%;
+    height: auto;
+}
+
+.linkButton {
+    padding: 5px;
+    border: 5px solid #B34409;
+    background-color: #f3af96;
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.linkButton:link {
+    color: black;
+    text-decoration: none;
+    background-color: #f3af96;
+}
+.linkButton:visited {
+    color: black;
+    text-decoration: none;
+    background-color: #f3af96;
+}
+.linkButton:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #d17756;
 }
