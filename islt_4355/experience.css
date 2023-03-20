@@ -1,0 +1,114 @@
+.gridItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.imgWrapper {
+    background-color: #0b4735;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.imgWrapper p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+h2 {
+    background-color: #0b4735;
+    color: white;
+    text-align: center;
+}
+
+/*Positioning grid items*/
+
+/*For phone displays*/
+@media only screen and (max-width:1300px) {
+    .grid {
+        display: grid;
+        width: 80%;
+        margin: auto;
+    
+        /*border: 5px solid #0b4735;*/
+    
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr 1fr 3fr 3fr 3fr 1fr 3fr 3fr 3fr;
+    }
+
+    #CATHeader { grid-area: 1/1/1/5; }
+
+    #CATParagraph1 { grid-area: 2/1/2/5; }
+
+    #CATImg1 { grid-area: 3/1/3/3; }
+
+    #CATImg2 { grid-area: 3/3/3/5; }
+
+    #CATParagraph2 { grid-area: 4/1/4/5; }
+
+    #NanovaHeader { grid-area: 5/1/5/5; }
+
+    #NanovaParagraph1 { grid-area: 6/1/6/5; }
+
+    #NanovaImg1 { grid-area: 7/1/7/3; }
+
+    #NanovaImg2 { grid-area: 7/3/7/5; }
+
+    #NanovaParagraph2 { grid-area: 8/1/8/5; }
+
+    #ITResearchHeader { grid-area: 9/1/9/5; }
+
+    #ITResearchParagraph1 { grid-area: 10/1/10/5; }
+
+    #ITResearchImg1 { grid-area: 11/1/11/3; }
+
+    #ITResearchImg2 { grid-area: 11/3/11/5; }
+
+    #ITResearchParagraph2 { grid-area: 12/1/12/5; }
+}
+
+/*For tablet and desktop displays*/
+@media only screen and (min-width:1301px) {
+    .grid {
+        display: grid;
+        width: 80%;
+        margin: auto;
+    
+        /*border: 5px solid #0b4735;*/
+    
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr 1fr 3fr 3fr 1fr 3fr 3fr;
+    }
+
+    #CATHeader { grid-area: 1/1/1/5; }
+
+    #CATParagraph1 { grid-area: 2/1/2/4; }
+
+    #CATImg1 { grid-area: 2/4/2/5; }
+
+    #CATImg2 { grid-area: 3/1/3/2; }
+
+    #CATParagraph2 { grid-area: 3/2/3/5; }
+
+    #NanovaHeader { grid-area: 4/1/4/5; }
+
+    #NanovaParagraph1 { grid-area: 5/1/5/4; }
+
+    #NanovaImg1 { grid-area: 5/4/5/5; }
+
+    #NanovaImg2 { grid-area: 6/1/6/2; }
+
+    #NanovaParagraph2 { grid-area: 6/2/6/5; }
+
+    #ITResearchHeader { grid-area: 7/1/7/5; }
+
+    #ITResearchParagraph1 { grid-area: 8/1/8/4; }
+
+    #ITResearchImg1 { grid-area: 8/4/8/5; }
+
+    #ITResearchImg2 { grid-area: 9/1/9/2; }
+
+    #ITResearchParagraph2 { grid-area: 9/2/9/5; }
+}

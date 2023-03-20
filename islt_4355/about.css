@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    line-height: 1.5;
 }
 
 .column1 {

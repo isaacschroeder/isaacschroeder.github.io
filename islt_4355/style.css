@@ -6,7 +6,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #a3e6d2;
-    font-size: 120%;
+    line-height: 1.5;
     font-family: 'Comfortaa', monospace;
 }
 
@@ -76,7 +76,23 @@ div[class^='column'], div[class*=' column']{
     background-color: #d17756;
 }
 
-/*mobile navigation!*/
+/*Small screens*/
 @media only screen and (max-width:1000px) {
+    body {
+        font-size: 18px;
+    }
+}
 
+/*Mid size screens*/
+@media only screen and (min-width:1001px) and (max-width:1499px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/*Large screens screens*/
+@media only screen and (min-width:1500px) {
+    body {
+        font-size: 22px;
+    }
 }

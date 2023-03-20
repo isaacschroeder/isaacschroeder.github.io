@@ -1,9 +1,34 @@
 .firstParagraph::first-letter {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #067654;
+    color: #034330;
 }
 
 /*no pseudo selector needed*/
 .followingParagraph {
     text-indent: 1em; /*indent units should be based on font size*/
+}
+
+.columnWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+
+.columnItem {
+    width: 70%;
+}
+
+/*For phone and tablet displays, 1 column setup*/
+@media only screen and (max-width:1700px) {
+    .columnItem {
+        width: 90%;
+    }
+}
+
+/*For desktop displays, 2 column setup*/
+@media only screen and (min-width:1701px) {
+    .columnItem {
+        width: 70%;
+    }
 }

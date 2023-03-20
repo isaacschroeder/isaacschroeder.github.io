@@ -6,10 +6,11 @@
         Use: For displaying my experience gained from various positions, projects, classes, etc
         Author: Isaac Schroeder
         School/Term: University of Missouri, Spring 2023
-        Developed: 3/3/23
-        Tested: 3/3/23
+        Developed: 3/19/23
+        Tested: 3/19/23
     -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--To be mobile friendly!-->
     <title>Isaac's Experience</title>
 
     <!--Google fonts:-->
@@ -19,6 +20,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="experience.css">
 </head>
 <body>
     <nav>
@@ -43,7 +45,144 @@
         <h1>Isaac Schroeder's Projects and Experience</h1>
     </header>
 
-    <main></main>
+    <main class="grid">
+        <h2 class="gridItem" id="CATHeader">Corporate Engineering Intern at Caterpillar Inc.</h2>
+
+        <div class="gridItem" id="CATParagraph1">
+            <div class="textWrapper1">
+                <h3>Description</h3>
+                <p>
+                Performed embedded software development duties for the Caterpillar Medium Track-Type 
+                Tractor team from May to August of 2022. Primarily implemented coded solutions in C to complete 
+                assigned tasks. Provided general software maintenance for the machines codebase, as well as designing, 
+                implementing, and testing a complete rework of the cab lighting feature for medium tractors. Worked on 
+                a team composed of engineers of multiple disciplines and put communication skills to work to ensure 
+                work was done optimally and correctly. Problem solving skills were paramount to identifying existing 
+                issues and determining the best strategies for problem resolution. Conducted extensive testing via both 
+                hardware-in-the-loop and simulated methodologies.
+                </p>
+            </div>
+        </div>
+
+        <div class="gridItem" id="CATImg1">
+            <div class="imgWrapper">
+                <img src="Items/CATPic1.png" alt="CATPic1">
+                <p>Myself next to a D6T Medium Track-Type Tractor</p>
+            </div>
+        </div>
+
+        <div class="gridItem" id="CATImg2">
+            <div class="imgWrapper">
+                <img src="Items/CATPic2.png" alt="CATPic2">
+                <p>My Manager Steve and I</p>
+            </div>
+        </div>
+
+        <div class="gridItem" id="CATParagraph2">
+            <div class="textWrapper1">
+                <h3>Reflection</h3>
+                <p>
+                Caterpillar has been my favorite place to work so far. During my time there I was able to accomplish great 
+                things. I learned a lot about working on a large codebase, the elaborate mechanics and electronics that go 
+                into construction vehicles, and challenges that come with developing heavy machinery. Additionally, I learned 
+                about how to work effectively in a team, and I was fortunate to have some really amazing coworkers. I am 
+                very happy with the work that I was able to contribute to the codebase. I've been told that my changes will 
+                reach production vehicles within the coming months.
+                </p>
+            </div>
+        </div>
+
+        <h2 class="gridItem" id="NanovaHeader">Electrical Engineer Intern for Plasmadent Inc. by Nanova</h2>
+
+        <div class="gridItem" id="NanovaParagraph1">
+            <div class="textWrapper1">
+                <h3>Description</h3>
+                <p>
+                Worked on developing new and innovative products for the medical field from June to December of 2020. 
+                Not only operated as an embedded software developer, but additionally took on typical duties of an 
+                electrical engineer, determining the electronic components to be used within multiple devices, reading 
+                integrated circuit data sheets, and testing prototype circuit boards. Worked closely with electrical 
+                engineers and mechanical engineers to prototype devices and rapidly improve them. Primarily utilized 
+                Microchip 8 bit PIC microcontrollers, programming them in C and limited assembly. Created intuitive 
+                state-machine based software capable of handling numerous sensor inputs and updating output indicators 
+                with low latency. Utilized several serial communication protocols to operate complex connected 
+                integrated circuits.
+                </p>
+            </div>
+        </div>
+
+        <div class="gridItem" id="NanovaImg1">
+            <div class="imgWrapper">
+                <img src="Items/NanovaPic1.png" alt="NanovaPic1">
+                <p>My supervisor Letian and I</p>
+            </div>
+        </div>
+
+        <div class="gridItem" id="NanovaImg2">
+            <div class="imgWrapper">
+                <img src="Items/NanovaPic2.png" alt="NanovaPic2">
+                <p>An early prototype setup for an unnamed device</p>
+            </div>
+        </div>
+        
+        <div class="gridItem" id="NanovaParagraph2">
+            <div class="textWrapper1">
+                <h3>Reflection</h3>
+                <p>
+                I had fun during my time at Plasmadent because I was essentially in a research and development role 
+                - basically every engineer's dream job. I was able to have a huge amount of say in how projects were 
+                designed and I had free reign to architect the software in the way I thought was best. While the 
+                freedom was awesome, it was initially very overwhelming. I was able to overcome the difficulty I 
+                encountered through independent research, careful and thorough planning, and learning from my superiors.
+                </p>
+            </div>
+        </div>
+
+        <h2 class="gridItem" id="ITResearchHeader">Game developer for IT Professor Fang Wang's research team</h2>
+
+        <div class="gridItem" id="ITResearchParagraph1">
+            <div class="textWrapper1">
+                <h3>Description</h3>
+                <p>
+                Produced multiple playable games for research applications from Fall semester 2021 to Spring semester 
+                2023. Worked primarily independently, operating as a one man development team. Initially, worked on 
+                prototype games for the University of Missouri's CAVE virtual reality environment to show off its 
+                potential functionality to interested parties and to become familiar with the system. Eventually, 
+                partnered with meteorology Professor Eric Aldricch to produce a game in the CAVE environment for teaching 
+                students about the weather event known as a mid latitude cyclone. Additionally, worked on a set of 
+                three games designed to measure relative cognitive function to be used to test how music impacts game 
+                playing ability. Said games were referred to as "brain games".
+                </p>
+            </div>
+        </div>
+
+        <div class="gridItem" id="ITResearchImg1">
+            <div class="imgWrapper">
+                <img src="Items/ITResearchPic1.png" alt="ITResearchPic1">
+                <p>Star Snatcher; one of the three brain games</p>
+            </div>
+        </div>
+
+        <div class="gridItem" id="ITResearchImg2">
+            <div class="imgWrapper">
+                <img src="Items/ITResearchPic2.png" alt="ITResearchPic2">
+                <p>A look into the weather event environment I created for the CAVE VR system</p>
+            </div>
+        </div>
+        
+        <div class="gridItem" id="ITResearchParagraph2">
+            <div class="textWrapper1">
+                <h3>Reflection</h3>
+                <p>
+                Working on Professor Wang's research team has been a ton of fun. It has allowed me to enhance my skills 
+                in my favorite type of software development, game development, while simultaneously contributing to 
+                interesting research projects. I am proud of what I have been able to produce in the past 3 semesters, 
+                and I am hoping that one day I can use the skills I have acquired in the video game industry.
+                </p>
+            </div>
+        </div>
+
+    </main>
 
     <footer>
         <p>ijsfyp@umsystem.edu</p>
