@@ -85,7 +85,7 @@ iframe {
         background-image: none;
     }
 
-    nav, img, .linkButton, #resumeLinksHeader {
+    nav, img, .linkButton, #resumeLinksHeader, iframe {
         display: none !important;
     }
 
