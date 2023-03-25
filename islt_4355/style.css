@@ -3,6 +3,9 @@ also, set default font size to 100% so that it can be scaled based on screensize
 
 background-color: #fddfd4;*/
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     padding: 0px;
     background-color: #a3e6d2;
@@ -11,11 +14,9 @@ body {
 }
 
 /*re-add margin to everything except nav section*/
-body header, footer {
+header, footer {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 25px;
     text-align: center;
 }
 
@@ -95,4 +96,26 @@ div[class^='column'], div[class*=' column']{
     body {
         font-size: 22px;
     }
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    display: block;
+    width: 2em;
+    height: 100%;
+}
+
+footer {
+    background-image: url(Images/footerBackground.png);
+    background-size: cover;
+    font-weight: bolder;
+    margin-top: 100px;
+    width: 100%;
+    background-color: #B34409;
+    flex-grow: 1;
 }
