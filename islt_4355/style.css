@@ -104,10 +104,16 @@ footer div {
     align-items: center;
 }
 
-footer img {
+.footerIcon {
     display: block;
     width: 2em;
     height: 100%;
+    transition: width 2s;
+    transition-timing-function: ease-out;
+}
+
+.footerIcon:hover {
+    width: 4em;
 }
 
 footer {
@@ -119,3 +125,4 @@ footer {
     background-color: #B34409;
     flex-grow: 1;
 }
+

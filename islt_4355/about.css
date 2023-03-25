@@ -9,6 +9,13 @@
     color: white;
 }
 
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
 /*For phone displays, 1 column setup*/
 @media only screen and (max-width:1000px) {
     .column1 {
