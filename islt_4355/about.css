@@ -47,3 +47,40 @@
         width: 25%;
     }
 }
+
+/*use important on properties to ensure it overrides (without it may lose to other more specific selectors)*/
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        border: none !important;
+    }
+
+    header {
+        font-family: 'Comfortaa', monospace !important;
+        text-align: center !important;
+    }
+
+    main, footer {
+        display: block !important;
+        font-family: 'Times New Roman', Times, serif !important;
+        margin-left: 0in !important;
+        padding: 0in !important;
+    }
+
+    main {
+        text-align: left !important;
+    }
+
+    footer {
+        text-align: center !important;
+    }
+
+    nav, img, .linkButton, #resumeLinksHeader {
+        display: none !important;
+    }
+
+    @page {
+        margin: 1in;
+    }
+}
