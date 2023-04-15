@@ -23,10 +23,36 @@ h2 {
     text-align: center;
 }
 
-/*Positioning grid items*/
+#SummaryTable table {
+    border: 2px #0b4735 dashed;
+}
+
+#SummaryTable table caption {
+    font-style: italic;
+    padding-bottom: 1em;
+}
+
+#SummaryTable table th {
+    background-color: #0b4735;
+    color: white;
+}
+
+#SummaryTable table th, #SummaryTable table td {
+    padding: 0.5em;
+}
+
+#SummaryTable table tr:nth-child(even) {
+    background-color: #87d4bd;
+}
+
+/*Positioning grid items and table stuff*/
 
 /*For phone displays*/
 @media only screen and (max-width:1300px) {
+    #SummaryTable table {
+        width: 100%;
+    }
+    
     .grid {
         display: grid;
         width: 80%;
@@ -67,10 +93,18 @@ h2 {
     #ITResearchImg2 { grid-area: 11/3/11/5; }
 
     #ITResearchParagraph2 { grid-area: 12/1/12/5; }
+
+    #SummaryHeader { grid-area: 13/1/13/5; }
+
+    #SummaryTable { grid-area: 14/1/14/5; }
 }
 
 /*For tablet and desktop displays*/
 @media only screen and (min-width:1301px) {
+    #SummaryTable table {
+        width: 85%;
+    }
+
     .grid {
         display: grid;
         width: 80%;
@@ -111,4 +145,8 @@ h2 {
     #ITResearchImg2 { grid-area: 9/1/9/2; }
 
     #ITResearchParagraph2 { grid-area: 9/2/9/5; }
+
+    #SummaryHeader { grid-area: 10/1/10/5; }
+
+    #SummaryTable { grid-area: 11/1/11/5; }
 }
