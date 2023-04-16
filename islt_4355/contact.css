@@ -1,0 +1,34 @@
+.formItem {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.formItem input, .formItem textarea {
+    font-size: 1em;
+}
+
+.formItem label {
+    font-weight: bold;
+}
+
+#sendbtn {
+    background-color: #0b4735;
+    color: white;
+    padding: 0.5em;
+    width: auto;
+}
+
+/*For phone displays*/
+@media only screen and (max-width:1000px) {
+    .formItem input, .formItem textarea {
+        width: 90%;
+    }
+    
+}
+
+/*For tablet and desktop displays*/
+@media only screen and (min-width:1001px) {
+    .formItem input, .formItem textarea {
+        width: 40%;
+    }
+}

@@ -2,16 +2,16 @@
 <html lang="en-US">
 <head>
     <!--
-        Title: Home Page
-        Use: The place a user first arrives at upon approaching the website
+        Title: Contact page
+        Use: A form which people can use to contact the website author.
         Author: Isaac Schroeder
         School/Term: University of Missouri, Spring 2023
-        Developed: 3/28/23
-        Tested: 3/28/23
+        Developed: 4/15/23
+        Tested: 4/15/23
     -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--To be mobile friendly!-->
-    <title>Isaac's Home Page</title>
+    <title>Isaac's Experience</title>
 
     <!--Favicon!-->
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <nav>
@@ -45,35 +45,34 @@
     </nav>
 
     <header>
-        <h1>Welcome to Isaac Schroeder's Digital Portfolio</h1>
+        <h1>Contact Isaac Schroeder!</h1>
     </header>
 
     <main>
-        <h3>Learn about Isaac's education, projects, previous jobs, and more!</h3>
-
-        <div class="columnWrapper">
-            <div class="column1">
-                <div class="textWrapper1">
-                    <p>
-                        If you are looking for a qualified software developer, your search may end here! 
-                        My name is Isaac Schroeder, and I possess a variety of programming capabilities 
-                        which might be of interest to you or your company. This website outlines my educational 
-                        accomplishments, software projects, and previous positions of employment. I have 
-                        experience over several development areas, ranging from embedded system hardware 
-                        projects to application creation on multiple platforms. My innate interest in problem 
-                        solving through coding helps me to continuously expand my knowledge through taking on 
-                        new technologies and projects. I look forward to employment with a company who is 
-                        interested in making the world a better place. I am not particular about what kind 
-                        of programming I will be doing as long as I can contribute in a meaningful way. Be 
-                        sure to reach out through my contact page if you are in need of my skill set.
-                    </p>
-                </div>
+        <form action="mailto:someone@example.com?Subject=portfolio%20site%20inquiry" method="post" enctype="text/plain">
+            <div class="formItem">
+                <label for="FirstName">First Name:</label>
+                <input tabindex="1" autofocus type="text" id="FirstName" name="FirstName" placeholder="Enter your first name here" required>
+            </div>
+            
+            <div class="formItem">
+                <label for="LastName">Last Name:</label>
+                <input tabindex="2" type="text" id="LastName" name="LastName" placeholder="Enter your last name here" required>
             </div>
 
-            <div class="column2">
-                <img src="Items/bldgss.jpg" alt="Picture of Isaac Schroeder">
+            <div class="formItem">
+                <label for="EmailAddr">Email Address:</label>
+                <input tabindex="3" type="email" id="EmailAddr" name="EmailAddr" placeholder="Enter your email address here" required>
             </div>
-        </div>
+
+            <div class="formItem">
+                <textarea tabindex="4" name="Message" id="Message" rows="10" placeholder="Enter your message here" required></textarea>
+            </div>
+
+            <div class="formItem">
+                <input tabindex="5" id="sendbtn" type="submit" value="Send Message">
+            </div>
+        </form>
     </main>
 
     <footer>
