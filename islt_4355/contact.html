@@ -73,6 +73,16 @@
                 <input tabindex="5" id="sendbtn" type="submit" value="Send Message">
             </div>
         </form>
+        <div class="textWrapper2" id="estimationMsg">
+            <p>
+                Thank you for any inquiries! Expect a response by: 
+                <script>
+                    var date = new Date();
+                    date.setDate(date.getDate() + 3);
+                    document.write(date.toDateString());
+                </script>
+            </p>
+        </div>
     </main>
 
     <footer>
